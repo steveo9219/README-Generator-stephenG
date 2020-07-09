@@ -49,23 +49,13 @@ const questions = [
 		message:
 			"Please enter any testing protocols that you used for your project?",
 	},
-	{
-		type: "input",
-		name: "githubUser",
-		message: "Enter your GitHub Username",
-	},
-	{
-		type: "input",
-		name: "githubEmail",
-		message: "Enter your GitHub Email",
-	},
 ];
 
 var inquirer = require("inquirer");
 
 function generateMarkdown(data) {
 	return `
-  # Title: ${data.title}
+  # Title: The Title for my Project is ${data.title}
   # Description: ${data.description}
   # Table of Contents: ${data.tableOfContents}
   # Installation: ${data.installation}
